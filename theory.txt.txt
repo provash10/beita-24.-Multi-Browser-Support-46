@@ -1,0 +1,75 @@
+###Hover/Pseodo 
+*****Hover Sara Transition kora possible na.
+*****Transition Property >>> For Create Various Effect 
+>>> Slow motion or Speed
+
+transition: background-color 3s, width 5s, height 5s;
+transition: background-color 3s, width 5s, height 5s, ease-out; (not parallel motion)
+***** ease-out >>> see inspact....
+*****copy code form inspect like = cubic-bezier(0.68, 0.47, 1, 0.22)
+*****Search Property from Inspect
+***** Google Search CSS3 effects
+==========================================================
+OR, transition: all 2s cubic-bezier(0.68, 0.47, 1, 0.22);
+OR, transition: all 2s ease-out;
+===============================================================
+*****Rotating ===hover option====
+*****transition Rotating >>> transform: rotate(360deg);
+transform: skewX(90deg);
+transform: skewY(100deg);
+transform: scale(1,1);
+
+
+==================================================================
+====================================================================
+<div class="block1"></div>
+    <div class="block2"></div>
+================================================
+.block1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.block1:hover{
+    background-color: green;
+}
+====================================
+Support CSS any Browser
+By- -webkit-, -moz-, -ms-, -o- Property 
+for google chrome, mozila, safari etc...
+======================================
+.block1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* transition: background-color 3s, width 3s, cubic-bezier(0.68, 0.47, 1, 0.22); */
+   
+    -webkit-transition: all 2s cubic-bezier(0.68, 0.47, 1, 0.22);
+    transition: all 2s cubic-bezier(0.68, 0.47, 1, 0.22);
+}
+==================
+.block1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* transition: background-color 3s, width 3s, cubic-bezier(0.68, 0.47, 1, 0.22); */
+   
+    -moz-transition: all 2s cubic-bezier(0.68, 0.47, 1, 0.22);
+    -ms-transition: all 2s cubic-bezier(0.68, 0.47, 1, 0.22);
+    -o-transition: all 2s cubic-bezier(0.68, 0.47, 1, 0.22);
+    -webkit-transition: all 2s cubic-bezier(0.68, 0.47, 1, 0.22);
+    transition: all 2s cubic-bezier(0.68, 0.47, 1, 0.22);
+}
+.block1:hover{
+    background-color: green;
+    width: 600px;
+    /* transform: rotate(360deg); */
+    /* transform: skewX(200deg); */
+
+    -o-transform: scale(3,5);
+    -webkit-transform: scale(3,5);
+    -moz-transform: scale(3,5);
+    -ms-transform: scale(3,5);
+    transform: scale(3,5);
+
+}
